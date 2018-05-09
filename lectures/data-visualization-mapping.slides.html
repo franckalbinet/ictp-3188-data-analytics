@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>data-analytics-big-picture slides</title>
+<title>data-visualization-mapping slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11904,11 +11904,11 @@ a.anchor-link {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># To run this notebook as a reveal.js presentation, run the following command in notebook&#39;s folder:</span>
-<span class="c1"># `jupyter-nbconvert --to slides data-analytics-big-picture.ipynb --reveal-prefix=reveal.js --post serve`</span>
+<span class="c1"># `jupyter-nbconvert --to slides data-visualization-mapping.ipynb --reveal-prefix=reveal.js --post serve`</span>
 </pre></div>
 
 </div>
@@ -11921,7 +11921,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="DATA-ANALYTICS-&#9654;THE-BIG-PICTURE">DATA ANALYTICS &#9654;THE BIG PICTURE<a class="anchor-link" href="#DATA-ANALYTICS-&#9654;THE-BIG-PICTURE">&#182;</a></h1><p><a href="franckalbinet@gmail.com">franckalbinet@gmail.com</a></p>
+<h1 id="DATA-VIS.-&#9654;THE-BIG-PICTURE">DATA VIS. &#9654;THE BIG PICTURE<a class="anchor-link" href="#DATA-VIS.-&#9654;THE-BIG-PICTURE">&#182;</a></h1><p><a href="franckalbinet@gmail.com">franckalbinet@gmail.com</a></p>
 
 </div>
 </div>
@@ -11938,23 +11938,12 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="img/data-science-process.png" alt="data-science-process.png">
-<a href="https://en.wikipedia.org/wiki/Data_science">https://en.wikipedia.org/wiki/Data_science</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Why-IoT-&amp;-Data-Science-should-be-considered-together?">&#9656; Why IoT &amp; Data Science should be considered together?<a class="anchor-link" href="#&#9656;-Why-IoT-&amp;-Data-Science-should-be-considered-together?">&#182;</a></h2><hr>
-<ol>
-<li>Data Science without data is an empty shell</li>
-<li>Collecting tons of data as an end in itself is pointless</li>
-<li>Volume, velocity and variety of data being collected by IoT open new opportunity to Data Science</li>
-<li>Because there is a lot of hype around both fields</li>
+<h2 id="&#9656;-Exploratory-Data-Analysis">&#9656; Exploratory Data Analysis<a class="anchor-link" href="#&#9656;-Exploratory-Data-Analysis">&#182;</a></h2><ol>
+<li>To identify correlation, outliers, patterns, ...</li>
+<li>To formulate hypothesis and to further inform your modeling</li>
+<li>To gain new and unexpected insights</li>
 </ol>
+<p><em>Heuristic and highly iterative process</em></p>
 
 </div>
 </div>
@@ -11963,11 +11952,14 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-IoT,-Data-Science,-Human-ecosystem">&#9656; IoT, Data Science, Human ecosystem<a class="anchor-link" href="#&#9656;-IoT,-Data-Science,-Human-ecosystem">&#182;</a></h2><ul>
-<li><strong>IoT augments</strong>, mimics this <strong>sensing process</strong></li>
-<li><strong>Data Science</strong> augments, mimics this <strong>representation process</strong></li>
-<li><strong>Humans define objectives</strong> and goals, give meaning and interpret based on current knowledge</li>
+<h2 id="&#9656;-Data-Viz-as-an-end-in-itself">&#9656; Data Viz as an end in itself<a class="anchor-link" href="#&#9656;-Data-Viz-as-an-end-in-itself">&#182;</a></h2><ul>
+<li>You might have seen compelling data viz. products in then New York Times, The Guardian, ...</li>
+<li>Often the fruit of an intense collaborative within a multi-disciplinary team</li>
+<li>Should use means and knowledge to the level of the message you want to convey</li>
+<li>Data Viz for EDA has different goals</li>
 </ul>
+<p><a href="http://fr.anckalbi.net/child-cash-grant">http://fr.anckalbi.net/child-cash-grant</a></p>
+<p>How to lie with maps: <a href="http://press.uchicago.edu/ucp/books/book/chicago/H/bo3696845.html">http://press.uchicago.edu/ucp/books/book/chicago/H/bo3696845.html</a></p>
 
 </div>
 </div>
@@ -11976,89 +11968,12 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-The-value-chain-and-the-oil-analogy">&#9656; The value chain and the oil analogy<a class="anchor-link" href="#&#9656;-The-value-chain-and-the-oil-analogy">&#182;</a></h2><ul>
-<li><strong>"Data is the new oil"</strong> repeated ad nauseam in the medias and the analogy is often carried further</li>
-<li><strong>Upstream</strong>: raw data is collected (data supply)</li>
-<li><strong>Middlestream</strong>: process of refining, cleaning, pre-processing, analyzing and modeling data</li>
-<li><strong>Downstream</strong>: delivering data products to end users</li>
-<li><strong>Pipeline</strong>: the value chain as a whole</li>
+<h2 id="&#9656;-Data-Viz-for-decision-making">&#9656; Data Viz for decision making<a class="anchor-link" href="#&#9656;-Data-Viz-for-decision-making">&#182;</a></h2><ul>
+<li>Decision Support Making System</li>
+<li>Example of Nuclear Emergency Response</li>
 </ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-AN-EXAMPLE-OF-QUALITY-MONITORING-SYSTEM">&#9656; AN EXAMPLE OF QUALITY MONITORING SYSTEM<a class="anchor-link" href="#&#9656;-AN-EXAMPLE-OF-QUALITY-MONITORING-SYSTEM">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-IoT-network-senses">&#9656; IoT network senses<a class="anchor-link" href="#&#9656;-IoT-network-senses">&#182;</a></h2><ul>
-<li>Particulate matter (PM)</li>
-<li>CO2</li>
-<li>SO2</li>
-<li>...</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Analytics-pipeline-fetches-secondary-data">&#9656; Analytics pipeline fetches secondary data<a class="anchor-link" href="#&#9656;-Analytics-pipeline-fetches-secondary-data">&#182;</a></h2><ul>
-<li>Social networks</li>
-<li>Meteorological forecasts</li>
-<li>Crowd-sourced data</li>
-</ul>
-<p><em>Example of crowd-sourced data: <a href="https://blog.safecast.org/">https://blog.safecast.org/</a></em></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Analytics-pipeline-&quot;stirs&quot;-data">&#9656; Analytics pipeline "stirs" data<a class="anchor-link" href="#&#9656;-Analytics-pipeline-&quot;stirs&quot;-data">&#182;</a></h2><ul>
-<li>Performs <strong>spatial interpolation of measurements</strong> with associated uncertainty</li>
-<li>Performs <strong>Sentiment Analysis</strong> on social networks data</li>
-<li><strong>Harnesses</strong> Meteorological <strong>forecasts</strong></li>
-<li>And <strong>outputs diagnosis / prognosis</strong></li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Decision-Makers-...">&#9656; Decision Makers ...<a class="anchor-link" href="#&#9656;-Decision-Makers-...">&#182;</a></h2><ul>
-<li><strong>Interpret Data</strong> Science pipeline outputs in a wider context</li>
-<li>Control road traffic, enforce restriction use, ...</li>
-<li>Provide feedbacks to improve the whole value chain if required</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Why-Decision-Makers-have-the-last-word?">&#9656; Why Decision Makers have the last word?<a class="anchor-link" href="#&#9656;-Why-Decision-Makers-have-the-last-word?">&#182;</a></h2><ol>
-<li>They understand the overall context: risk, uncertainty, not modelled parameters, ...</li>
-<li>They can decide when to inject additionnal domain knowledge into the pipeline</li>
-<li>They are the bosses!</li>
-</ol>
+<p><a href="https://franckalbinet.shinyapps.io/food_restriction_dashboard/">https://franckalbinet.shinyapps.io/food_restriction_dashboard/</a>
+<a href="http://fr.anckalbi.net/collect-logmap/">http://fr.anckalbi.net/collect-logmap/</a></p>
 
 </div>
 </div>
@@ -12067,7 +11982,7 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="II.-HOW-&#9656;-ARCHITECTURAL-CONSIDERATIONS">II. HOW &#9656; ARCHITECTURAL CONSIDERATIONS<a class="anchor-link" href="#II.-HOW-&#9656;-ARCHITECTURAL-CONSIDERATIONS">&#182;</a></h1>
+<h1 id="II.-Semiology-of-Graphics-Primer">II. Semiology of Graphics Primer<a class="anchor-link" href="#II.-Semiology-of-Graphics-Primer">&#182;</a></h1>
 </div>
 </div>
 </div></section><section>
@@ -12075,11 +11990,10 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Once-a-task-at-hand">&#9656; Once a task at hand<a class="anchor-link" href="#&#9656;-Once-a-task-at-hand">&#182;</a></h2><ul>
-<li><strong>What</strong> type of analytics, algorithms, ...?</li>
-<li><strong>When</strong> to perform calculation?</li>
-<li><strong>Where</strong> to perform calculation and store data [if required]?</li>
-</ul>
+<h2 id="&#9656;-Data-viz.-design-space-is-huge">&#9656; Data viz. design space is huge<a class="anchor-link" href="#&#9656;-Data-viz.-design-space-is-huge">&#182;</a></h2><hr>
+<p><img src="img/hundred-diff-graphics.png" alt="hundred-diff-graphics.png"></p>
+<p><a href="https://python-graph-gallery.com">https://python-graph-gallery.com</a></p>
+<p><a href="http://www.perceptualedge.com/">http://www.perceptualedge.com/</a></p>
 
 </div>
 </div>
@@ -12088,13 +12002,15 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Use-case-and-domain-knowledge-first">&#9656; Use case and domain knowledge first<a class="anchor-link" href="#&#9656;-Use-case-and-domain-knowledge-first">&#182;</a></h2><ul>
-<li>What is the use case?</li>
-<li>What decision do we want to make?</li>
-<li>Which data will support the decision?</li>
-<li>What are the resources (financial, human, technical)?</li>
+<h2 id="&#9656;-Data-viz.-touchstone">&#9656; Data viz. touchstone<a class="anchor-link" href="#&#9656;-Data-viz.-touchstone">&#182;</a></h2><hr>
+<ul>
+<li>How to assess the <strong>relevance of a particular data visualization</strong>?</li>
+<li>Is there such things as <strong>good or bad data visualizations</strong>?</li>
+<li>Data Viz. is <strong>not new</strong></li>
+<li><strong>"Semiology Of Graphics"</strong>, J. Bertin, 1967</li>
 </ul>
-<p><em>As opposed to “let’s collect everything we can, then we will see what we can do with it” syndrom</em></p>
+<p><a href="https://en.wikipedia.org/wiki/Jacques_Bertin">https://en.wikipedia.org/wiki/Jacques_Bertin</a></p>
+<p><a href="https://www.crcpress.com/Visualization-Analysis-and-Design/Munzner/p/book/9781466508910">https://www.crcpress.com/Visualization-Analysis-and-Design/Munzner/p/book/9781466508910</a></p>
 
 </div>
 </div>
@@ -12103,10 +12019,14 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Storing-or-not-storing">&#9656; Storing or not storing<a class="anchor-link" href="#&#9656;-Storing-or-not-storing">&#182;</a></h2><ul>
-<li>Store, persist, accrue data over time in a <strong>"Data Lake"</strong></li>
-<li>Discard data once harnessed by the analytics pipeline: <strong>"Stream Analytics"</strong></li>
+<h2 id="&#9656;-Notions-of-Semiology-Of-Graphics">&#9656; Notions of Semiology Of Graphics<a class="anchor-link" href="#&#9656;-Notions-of-Semiology-Of-Graphics">&#182;</a></h2><hr>
+<ul>
+<li><strong>Marks</strong> are basic geometric elements and <strong>channels</strong> control their appearance</li>
+<li><strong>Effective channels</strong> should reflect/match the magnitude of information of your data</li>
+<li>For instance, <strong>Length channel effectively convey</strong> variation of quantitative data. <strong>Color Hue</strong> channel <strong>does not</strong></li>
 </ul>
+<p><a href="https://vimeo.com/26205288">https://vimeo.com/26205288</a></p>
+<p><a href="https://www.cs.ubc.ca/~tmm/talks/minicourse14/vad15seattle-4x4.pdf">https://www.cs.ubc.ca/~tmm/talks/minicourse14/vad15seattle-4x4.pdf</a></p>
 
 </div>
 </div>
@@ -12115,12 +12035,11 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Delegating-or-centralizing">&#9656; Delegating or centralizing<a class="anchor-link" href="#&#9656;-Delegating-or-centralizing">&#182;</a></h2><ul>
-<li>Computing load can balanced/spread across network topology</li>
-<li>When computing takes place at the edge of the network, this is called <strong>Edge Computing</strong></li>
-<li>Both simple and complex computing taks can be performed at the edge</li>
-</ul>
-<p><a href="http://www.nvidia.co.uk/object/embedded-systems-dev-kits-modules-uk.html">http://www.nvidia.co.uk/object/embedded-systems-dev-kits-modules-uk.html</a></p>
+<h2 id="&#9656;-Channels:-Rankings">&#9656; Channels: Rankings<a class="anchor-link" href="#&#9656;-Channels:-Rankings">&#182;</a></h2><hr>
+<p><img src="img/channel-ranking.png" alt="channel-ranking.png"></p>
+<p><a href="https://www.crcpress.com/Visualization-Analysis-and-Design/Munzner/p/book/9781466508910">https://www.crcpress.com/Visualization-Analysis-and-Design/Munzner/p/book/9781466508910</a></p>
+<p><a href="http://vda.univie.ac.at/Teaching/Vis/13s/LectureNotes/05_visual_encodings.pdf">http://vda.univie.ac.at/Teaching/Vis/13s/LectureNotes/05_visual_encodings.pdf</a></p>
+<p><a href="http://www.perceptualedge.com/articles/visual_business_intelligence/the_visual_perception_of_variation.pdf">http://www.perceptualedge.com/articles/visual_business_intelligence/the_visual_perception_of_variation.pdf</a></p>
 
 </div>
 </div>
@@ -12129,10 +12048,57 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Learning-vs.-predicting">&#9656; Learning vs. predicting<a class="anchor-link" href="#&#9656;-Learning-vs.-predicting">&#182;</a></h2><ul>
-<li><strong>Training phases</strong> of algorithms might require considerable resources (Neural Networks)</li>
-<li>But once trained, the <strong>prediction phase</strong> requires few resources</li>
+<h2 id="&#9656;-Channel-efficiency:-comparing-area">&#9656; Channel efficiency: comparing area<a class="anchor-link" href="#&#9656;-Channel-efficiency:-comparing-area">&#182;</a></h2><hr>
+<p><img src="img/area-circles.png" alt="area-circles.png"></p>
+<p>Compare Areas of circles: how much bigger is the second circle?</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#9656;-Channel-efficiency:-comparing-length">&#9656; Channel efficiency: comparing length<a class="anchor-link" href="#&#9656;-Channel-efficiency:-comparing-length">&#182;</a></h2><p><img src="img/bar-lengths.png" alt="bar-lengths.png"></p>
+<p>What is the relative length of these bars?</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#9656;-Channel-efficiency:-Answer">&#9656; Channel efficiency: Answer<a class="anchor-link" href="#&#9656;-Channel-efficiency:-Answer">&#182;</a></h2><p><img src="img/bar-lengths-truth.png" alt="bar-lengths-truth.png"></p>
+<p>Biggest circle area was 7 times bigger as was the longer bar!</p>
+<p>Which channel was most efficient, accurate? Required the least amount of cognitive load?</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#9656;-Some-remarks-on-color-use">&#9656; Some remarks on color use<a class="anchor-link" href="#&#9656;-Some-remarks-on-color-use">&#182;</a></h2><blockquote><p>"For some reason, as soon as color is applied to a map the color becomes a focus of criticism, and everyone, regardless of his familiarity with the principles of color use, seems to feel that he is entitled to comment upon the color on the basis of his own likes and dislikes"</p>
+</blockquote>
+<p>-Arthur H. Robinson, in 1952</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#9656;-Some-remarks-on-color-use">&#9656; Some remarks on color use<a class="anchor-link" href="#&#9656;-Some-remarks-on-color-use">&#182;</a></h2><ul>
+<li>Choosing colors is <strong>not a matter of personal taste</strong></li>
+<li><strong>Color channels</strong>: Hue, Luminance and Saturation have <strong>their own functions</strong></li>
+<li><strong>Follow best practices</strong>: <a href="http://colorbrewer2.org/">http://colorbrewer2.org/</a></li>
 </ul>
+<p><em><a href="http://colorbrewer2.org/">http://colorbrewer2.org/</a></em></p>
+<p><em><a href="http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf">http://www.perceptualedge.com/articles/visual_business_intelligence/rules_for_using_color.pdf</a></em></p>
+<p><em><a href="http://web.archive.org/web/20131019161245/http://www.sv.vt.edu/~rkriz/Projects/create_color_table/color_07.pdf">http://web.archive.org/web/20131019161245/http://www.sv.vt.edu/~rkriz/Projects/create_color_table/color_07.pdf</a></em></p>
 
 </div>
 </div>
@@ -12142,443 +12108,25 @@ a.anchor-link {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="&#9656;-Quiz">&#9656; Quiz<a class="anchor-link" href="#&#9656;-Quiz">&#182;</a></h2><ol>
-<li>There is a common architecture standard for IoT/Data science technical implementations</li>
-<li>Big data infrastructures is most of the time required</li>
-<li>Training artificial Neural Network is resource intensive, predicting/using it is not</li>
-<li>Targeted use cases drive type and quantity of data to be collected</li>
+<li>Data visualization is a fairly recent research field</li>
+<li>Position on common scale is more efficient than area channel for quantitative data</li>
+<li>Color hue channel should be used for qualitative data only</li>
+<li>Choosing colors for your data visualization is really a matter of taste</li>
 </ol>
 
 </div>
 </div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="III.-HOW-&#9656;-ALGORITHMIC-CONSIDERATIONS">III. HOW &#9656; ALGORITHMIC CONSIDERATIONS<a class="anchor-link" href="#III.-HOW-&#9656;-ALGORITHMIC-CONSIDERATIONS">&#182;</a></h1>
-</div>
-</div>
 </div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Data-taxonomy">&#9656; Data taxonomy<a class="anchor-link" href="#&#9656;-Data-taxonomy">&#182;</a></h2><ul>
-<li><strong>QUANTITATIVE</strong> vs <strong>QUALITATIVE</strong></li>
-<li><strong>STRUCTURED</strong> vs <strong>UNSTRUCTURED</strong></li>
+<h2 id="&#9656;-&quot;One&quot;-word-about-maps-and-projection">&#9656; "One" word about maps and projection<a class="anchor-link" href="#&#9656;-&quot;One&quot;-word-about-maps-and-projection">&#182;</a></h2><ul>
+<li><p><em><a href="https://www.jasondavies.com/maps/transition/">https://www.jasondavies.com/maps/transition/</a></em></p>
+</li>
+<li><p><em><a href="http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html">http://www.progonos.com/furuti/MapProj/Normal/TOC/cartTOC.html</a></em></p>
+</li>
 </ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Keep-data-alive">&#9656; Keep data alive<a class="anchor-link" href="#&#9656;-Keep-data-alive">&#182;</a></h2><ul>
-<li>There is <strong>no ideal structure</strong> for data</li>
-<li>All <strong>depends on purpose</strong> of use</li>
-<li>BUT in all cases, every cleaning or transformation steps should be <strong>reproducible and automated</strong></li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Data-wrangling,-mungling">&#9656; Data wrangling, mungling<a class="anchor-link" href="#&#9656;-Data-wrangling,-mungling">&#182;</a></h2><blockquote><p>"… is the process of transforming and mapping data from one “raw” data form into another format with the intent of making it  more appropriate and valuable for a variety of downstream purposes such as analytics”</p>
-</blockquote>
-<p><a href="https://en.wikipedia.org/wiki/Data_wrangling">https://en.wikipedia.org/wiki/Data_wrangling</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-What-is-&quot;raw&quot;,-primary-data?">&#9656; What is "raw", primary data?<a class="anchor-link" href="#&#9656;-What-is-&quot;raw&quot;,-primary-data?">&#182;</a></h2><hr>
-<ul>
-<li><strong>Data collected from a source</strong> (for instance a sensor, data entry clerk, …)</li>
-<li>Has <strong>not been subject to prior processing</strong></li>
-<li><strong>BUT IS RELATIVE</strong>: data constantly re-aligned to analysis, predictive goals </li>
-</ul>
-
-</div>
-</div>
-</div><aside class="notes">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Ex: Temperature sensors sending data -&gt; might have systematic bias that could be corrected based on other stations, … detection errors mechanism (checksum) might reveal that some of the data transmitter are corrupted, so need to remove them, …</li>
-<li>Data entry clercks and spelling mistakes, …</li>
-<li>Prior processing: automatically by a program, manually by an analyst, researcher, …</li>
-<li>Depending pre-processed data (clean , reshaped, …) for one purpose might not be suitable for another one. In reality, data should be considered as a living entity rather than something set in stone, constantly re-aligned to the needs (that’s reflected by the variety of techniques  in data wrangling, versatility of tools, and Big Data tool ecosystem</li>
-</ul>
-
-</div>
-</div>
-</div>
-</aside></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Some-typical-data-cleaning-tasks">&#9656; Some typical data cleaning tasks<a class="anchor-link" href="#&#9656;-Some-typical-data-cleaning-tasks">&#182;</a></h2><ul>
-<li>Handling <strong>missing data</strong></li>
-<li>Handling <strong>duplicate data</strong></li>
-<li>String manipulation (to fix typos, ...)</li>
-<li>...</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Some-typical-data-preparation-tasks">&#9656; Some typical data preparation tasks<a class="anchor-link" href="#&#9656;-Some-typical-data-preparation-tasks">&#182;</a></h2><ul>
-<li>Replacing values, binning, indexing, combining, reshaping, ...</li>
-<li>Joining, merging, pivoting, stacking with quantitative data exploration in mind</li>
-<li>Performing feature engineering</li>
-<li>...</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-In-reality-...">&#9656; In reality ...<a class="anchor-link" href="#&#9656;-In-reality-...">&#182;</a></h2><hr>
-<ul>
-<li>Data cleaning and preparation is <strong>often reported to take up 80% or more</strong> of a data scientist’s time</li>
-<li>SO, the whole process <strong>MUST BE automated and reproducible</strong></li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Exploratory-Data-Analysis-[EDA]">&#9656; Exploratory Data Analysis [EDA]<a class="anchor-link" href="#&#9656;-Exploratory-Data-Analysis-[EDA]">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-EDA-motivation">&#9656; EDA motivation<a class="anchor-link" href="#&#9656;-EDA-motivation">&#182;</a></h2><ul>
-<li>To get acquainted <strong>gain insights</strong> on "never-seen" dataset</li>
-<li>To <strong>check assumptions</strong> required by modeling approaches</li>
-<li>To identify <strong>potential correlation</strong> between variables</li>
-<li>To identify <strong>potential similarities and clusters</strong></li>
-<li>...</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-EDA-as-a-detective-work">&#9656; EDA as a detective work<a class="anchor-link" href="#&#9656;-EDA-as-a-detective-work">&#182;</a></h2><ul>
-<li>In its tabular form, data is <strong>not really conducive to interpretation</strong></li>
-<li>Quest is to <strong>find the "angle of view"</strong> that will suddenly reveal never expected properties</li>
-<li>But it is a <strong>subtle game</strong> and require careful interpretation and critical thinking</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Does-correlation-imply-causation?">&#9656; Does correlation imply causation?<a class="anchor-link" href="#&#9656;-Does-correlation-imply-causation?">&#182;</a></h2><hr>
-<p><img src="img/correlation.png" alt="correlation.png"></p>
-<p><a href="https://www.xkcd.com/552/">https://www.xkcd.com/552/</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Why-quantitative-AND-graphical-EDA?">&#9656; Why quantitative AND graphical EDA?<a class="anchor-link" href="#&#9656;-Why-quantitative-AND-graphical-EDA?">&#182;</a></h2><p><img src="img/anscombe-quartet.png" alt="anscombe-quartet.png"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;--Identifying-clusters/patterns">&#9656;  Identifying clusters/patterns<a class="anchor-link" href="#&#9656;--Identifying-clusters/patterns">&#182;</a></h2><p><img src="img/kmeans-final-clustering.png" alt="kmeans-final-clustering.png"></p>
-<p><a href="https://github.com/rasbt/python-machine-learning-book">https://github.com/rasbt/python-machine-learning-book</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;--Spatializing:--#-measurements-Safecast---World">&#9656;  Spatializing:  # measurements Safecast - World<a class="anchor-link" href="#&#9656;--Spatializing:--#-measurements-Safecast---World">&#182;</a></h2><p><img src="img/safecast-world.png" alt="safecast-world.png"></p>
-<p><a href="https://www.kaggle.com/franckalbinet/safecast-exploratory-data-analysis-part-i">https://www.kaggle.com/franckalbinet/safecast-exploratory-data-analysis-part-i</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;--Spatializing:--#-measurements-Safecast---Japan">&#9656;  Spatializing:  # measurements Safecast - Japan<a class="anchor-link" href="#&#9656;--Spatializing:--#-measurements-Safecast---Japan">&#182;</a></h2><p><img src="img/safecast-jpn.png" alt="safecast-jpn.png"></p>
-<p><a href="https://www.kaggle.com/franckalbinet/safecast-exploratory-data-analysis-part-i">https://www.kaggle.com/franckalbinet/safecast-exploratory-data-analysis-part-i</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Predicting-with-Machine/Deep-Learning">&#9656; Predicting with Machine/Deep Learning<a class="anchor-link" href="#&#9656;-Predicting-with-Machine/Deep-Learning">&#182;</a></h2>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;--Explanatory-versus-predictive-goals">&#9656;  Explanatory versus predictive goals<a class="anchor-link" href="#&#9656;--Explanatory-versus-predictive-goals">&#182;</a></h2><ul>
-<li>In many disciplines, there is a near-exclusive use of <strong>statistical modeling for causal explanation</strong>;</li>
-<li>With the <strong>assumption</strong> that models with high explanatory power are inherently of high predictive power;</li>
-<li>In Machine and Deep Learning <strong>focus is given instead in predictive power</strong> based on monitored chosen evaluation metrics.</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Finding-the-&quot;best&quot;-line">&#9656; Finding the "best" line<a class="anchor-link" href="#&#9656;-Finding-the-&quot;best&quot;-line">&#182;</a></h2><p><img src="img/regression-which-line.png" alt="regression-which-line.png"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-The-Best-line-with-residuals">&#9656; The Best line with residuals<a class="anchor-link" href="#&#9656;-The-Best-line-with-residuals">&#182;</a></h2><p><img src="img/regression-best-line-errors.png" alt="regression-best-line-errors.png"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Model-capacity:-the-best-line">&#9656; Model capacity: the best line<a class="anchor-link" href="#&#9656;-Model-capacity:-the-best-line">&#182;</a></h2><p><img src="img/best-line-really.png" alt="best-line-really.png"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Fiddling-with-model-capacity">&#9656; Fiddling with model capacity<a class="anchor-link" href="#&#9656;-Fiddling-with-model-capacity">&#182;</a></h2><p><img src="img/polynomial-1-2-100.png" alt="polynomial-1-2-100.png"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;--That's-all-good-but-how-to-choose-the-right-model-capacity?">&#9656;  That's all good but how to choose the right model capacity?<a class="anchor-link" href="#&#9656;--That's-all-good-but-how-to-choose-the-right-model-capacity?">&#182;</a></h2><p><img src="img/machine_learning.png" alt="machine_learning.png"></p>
-<p><a href="https://xkcd.com/1838/">https://xkcd.com/1838/</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Regularization-as-a-&quot;wood-chisel&quot;">&#9656; Regularization as a "wood chisel"<a class="anchor-link" href="#&#9656;-Regularization-as-a-&quot;wood-chisel&quot;">&#182;</a></h2><ul>
-<li>Each hypothesis space is more or less prone to overfitting</li>
-<li>When overfitting, ideally we would like a "knob" allowing to <strong>regularize</strong> it</li>
-<li>The <strong>sequence Overfit -&gt; Regularize</strong> with training/validation/test datasets is our <strong>"wood chisel"</strong> to find and fine-tune the proper model</li>
-<li>Let's talk about that tonight at Adriatico?</li>
-</ul>
-<p><a href="https://en.wikipedia.org/wiki/Occam%27s_razor">https://en.wikipedia.org/wiki/Occam%27s_razor</a></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Deep-Neural-Networks-can-virtually-fit-anything">&#9656; Deep Neural Networks can virtually fit anything<a class="anchor-link" href="#&#9656;-Deep-Neural-Networks-can-virtually-fit-anything">&#182;</a></h2><p><img src="img/tf-deep-neural-net-to-the-rescue.png" alt="tf-deep-neural-net-to-the-rescue.png"></p>
-<p><a href="http://playground.tensorflow.org/">http://playground.tensorflow.org/</a> (with settings used: <a href="https://goo.gl/6BJ83E">https://goo.gl/6BJ83E</a>)</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Object-Detection---YOLO-example">&#9656; Object Detection - YOLO example<a class="anchor-link" href="#&#9656;-Object-Detection---YOLO-example">&#182;</a></h2><p><img src="img/yolo.png" alt="yolo.png"></p>
-<p><a href="https://pjreddie.com/darknet/yolo/">https://pjreddie.com/darknet/yolo/</a></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="IV.-THE-TOOLS-&amp;-RESOURCES">IV. THE TOOLS &amp; RESOURCES<a class="anchor-link" href="#IV.-THE-TOOLS-&amp;-RESOURCES">&#182;</a></h1>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<blockquote><p><strong>"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."</strong></p>
-</blockquote>
-<p>—Brian W. Kernighan, co-author of The C Programming Language and the "K" in "AWK"</p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Python-[possible]-ecosystem-for-Data-Analytics">&#9656; Python [possible] ecosystem for Data Analytics<a class="anchor-link" href="#&#9656;-Python-[possible]-ecosystem-for-Data-Analytics">&#182;</a></h2><p><img src="img/tools.png" alt="tools.png"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Outstanding-Python-reference-books-[companion-notebooks]">&#9656; Outstanding Python reference books [companion notebooks]<a class="anchor-link" href="#&#9656;-Outstanding-Python-reference-books-[companion-notebooks]">&#182;</a></h2><p><img src="img/python-reference-books.png" alt="python-reference-books.png"></p>
-<ul>
-<li><a href="https://github.com/wesm/pydata-book">https://github.com/wesm/pydata-book</a></li>
-<li><a href="https://github.com/ageron/handson-ml">https://github.com/ageron/handson-ml</a></li>
-<li><a href="https://github.com/fchollet/deep-learning-with-python-notebooks">https://github.com/fchollet/deep-learning-with-python-notebooks</a></li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Outstanding-R-reference-books-[free-books]">&#9656; Outstanding R reference books [free books]<a class="anchor-link" href="#&#9656;-Outstanding-R-reference-books-[free-books]">&#182;</a></h2><p><img src="img/R-reference-books.png" alt="R-reference-books.png"></p>
-<ul>
-<li><a href="http://r4ds.had.co.nz/">http://r4ds.had.co.nz/</a></li>
-<li><a href="http://adv-r.had.co.nz/">http://adv-r.had.co.nz/</a></li>
-<li><a href="http://r-pkgs.had.co.nz/">http://r-pkgs.had.co.nz/</a></li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Outstanding-online-courses">&#9656; Outstanding online courses<a class="anchor-link" href="#&#9656;-Outstanding-online-courses">&#182;</a></h2><ul>
-<li><a href="https://www.coursera.org/learn/machine-learning">https://www.coursera.org/learn/machine-learning</a></li>
-<li><a href="https://www.deeplearning.ai/">https://www.deeplearning.ai/</a></li>
-<li><a href="http://www.fast.ai/">http://www.fast.ai/</a></li>
-<li><a href="https://www.datacamp.com/courses">https://www.datacamp.com/courses</a></li>
-<li>...</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-A-diversity-of-approaches-but-all-good!">&#9656; A diversity of approaches but all good!<a class="anchor-link" href="#&#9656;-A-diversity-of-approaches-but-all-good!">&#182;</a></h2><p><img src="img/dl-learning-resources.png" alt="dl-learning-resources.png"></p>
-
-</div>
-</div>
-</div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="V.-HANDS-ON-SESSIONS-INTRO.">V. HANDS-ON SESSIONS INTRO.<a class="anchor-link" href="#V.-HANDS-ON-SESSIONS-INTRO.">&#182;</a></h1>
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-In-medias-res">&#9656; In medias res<a class="anchor-link" href="#&#9656;-In-medias-res">&#182;</a></h2><ol>
-<li>Install minimal technology stack</li>
-<li>You will be given a series of resources on NumPy, Pandas, ...</li>
-<li>Will define together achievable data analysis objectives</li>
-<li>Take the form of a Hackaton</li>
-</ol>
-<p><em>Form balanced teams!</em></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Questions">&#9656; Questions<a class="anchor-link" href="#&#9656;-Questions">&#182;</a></h2><ul>
-<li>Who has previous experience in NumPy and Pandas?</li>
-<li>Who has previous experience in Git and GitHub?</li>
-</ul>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#9656;-Supporting-notebooks">&#9656; Supporting notebooks<a class="anchor-link" href="#&#9656;-Supporting-notebooks">&#182;</a></h2><ul>
-<li><code>resources/python-language-essentials-for-data-science.ipynb</code></li>
-<li><code>resources/data-cleaning-and-preparation.ipynb</code></li>
-<li>more coming ...</li>
-</ul>
-<p>Toolbox install: <code>hands-on-sessions/README.md</code></p>
 
 </div>
 </div>
